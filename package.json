@@ -1,0 +1,14 @@
+{
+  "name": "tom-create.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal static website hosted on GitHub Pages.",
+  "scripts": {
+    "dev": "http-server . -p 3000 -c-1 -a 0.0.0.0",
+    "start": "http-server . -p 3000 -c-1 -a 0.0.0.0",
+    "test": "node scripts/check-site.mjs"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

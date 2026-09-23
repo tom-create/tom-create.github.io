@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal site of Tom — builder, tinkerer, and lifelong learner." />
+    <title>Tom · Personal Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div class="backdrop" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">tom.dev</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-toggle__icon">🌙</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="hero__eyebrow">Hello, world 👋</p>
+        <h1 class="hero__title">I'm <span class="accent">Tom</span>.</h1>
+        <p class="hero__subtitle">
+          I build small, thoughtful things for the web. This is my corner of the
+          internet — a place for experiments, notes, and projects.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">See my work</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2 class="section__title">About</h2>
+        <p class="section__lead">
+          I'm a developer who enjoys turning ideas into working software. I care
+          about clean design, fast tools, and shipping.
+        </p>
+        <ul class="chips">
+          <li class="chip">JavaScript</li>
+          <li class="chip">HTML &amp; CSS</li>
+          <li class="chip">Node.js</li>
+          <li class="chip">Design</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section">
+        <h2 class="section__title">Projects</h2>
+        <div class="cards" id="projects-grid"></div>
+      </section>
+
+      <section id="contact" class="section section--contact">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__lead">
+          Want to collaborate or just say hi? Reach out any time.
+        </p>
+        <a class="btn btn--primary" href="mailto:hello@example.com">Say hello</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built with care · <span id="year"></span></p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
